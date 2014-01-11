@@ -10,18 +10,18 @@ Fix bugs
 --------
 
 We try our hardest to write things correctly the first, but like any piece of software there are always bugs.
-Browse the issue tracker at [https://github.com/fez/fez/issues](https://github.com/fez/fez/issues), pick 
+Browse the issue tracker at <https://github.com/fez/fez/issues>, pick 
 something that looks interesting, and get hacking!
 
 Write operations
 ----------------
 
-The [operations.html](operation) ecosystem is what makes Fez so powerful. There is always space for more operations 
+The [operations](operations.html) ecosystem is what makes Fez so powerful. There is always space for more operations 
 and for improvement of existing operations. Is there something that you would like and doesn't exist yet? Write it. 
 Or perhaps there is an existing operation which doesn't have all the features you would like. Submit a pull request. 
 
 The operation API is simple. You don't have to be a core developer to understand how to write operations. Take a look
-at some of the operations at [http://github.com/fez](http://github.com/fez) to see how it's done.
+at some of the operations at <http://github.com/fez> to see how it's done.
 
 Donate
 ------
