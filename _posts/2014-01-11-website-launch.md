@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Website Launch"
 date:   2014-01-11 18:45:53
 categories: posts
