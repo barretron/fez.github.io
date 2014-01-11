@@ -7,9 +7,9 @@ Fez is an über fast build tool based on [tup][2] and engineered for Javascript.
 
 Let's look at the following ruleset:
 
-    *.less -> %f.css
-    *.css -> %f.min.css
-    *.min.css -> dist.min.css
+    *.less → %f.css
+    *.css → %f.min.css
+    *.min.css → dist.min.css
 
 And a few input files on our file system:
 
@@ -89,7 +89,7 @@ function takes a module (almost always the current module) as an argument. If
 that module is the *main* module (i.e the file which was run with `node
 fez.js`), Fez will parse command line options and run the builds generated from
 the rulesets in the module. This line should be in every build spec unless you
-are sure you will never want to run the build spec on its own. It is safe (and
+are sure you will never want to run the build spec on its own. It i→s safe (and
 recommended) to include the line even in build specs which will be used
 primarily as child specs. Using child specs will be discussed in more detail
 below.
@@ -111,7 +111,7 @@ glob, or an array of strings, which can be globs. All of the globs are expanded
 in the build graph and the complete set of inputs is passed to the
 operation. For example, imagine the following rule:
 
-    *.js -> dist.min.js
+    *.js → dist.min.js
 
 and the files:
 
@@ -122,9 +122,9 @@ and the files:
 The build graph would end up looking this like this:
 
     a.js
-         \
-    b.js  -> dist.min.js
-         /
+         ↘
+    b.js - ⇒ dist.min.js
+         ↗
     c.js
 
 Each of the inputs is a node, and all the nodes share a common ouput.
@@ -134,7 +134,7 @@ one relationships. It is used in cases where the inputs are unknown (i.e a glob)
 and the output is a function of the selected input. It's easiest to explain with
 an example. Let's use a similar rule as above:
 
-    *.js -> %f.min.js
+    *.js → %f.min.js
 
 and the files:
 
@@ -153,9 +153,9 @@ below for more details on Fez's utilities.
 The rule and files above  will result in the following build
 graph:
 
-    a.js -> a.min.js
-    b.js -> b.min.js
-    c.js -> c.min.js
+    a.js → a.min.js
+    b.js → b.min.js
+    c.js → c.min.js
 
 Unlike `rule`, `rule.each` produces a unique output for each input.  Cool! With
 `rule` and `rule.each`, we can define almost any transformational relationship.
