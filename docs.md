@@ -3,9 +3,9 @@ layout: default
 title: Fez - Documentation
 ---
 
-* <a href="#intro">Introduction</a>
-* <a href="#using">Using</a>
-  * <a href="understanding">Understanding rule and rule.each</a>
+1. <a href="#intro">Introduction</a>
+2. <a href="#using">Using</a>
+   1.1 <a href="understanding">Understanding rule and rule.each</a>
 
 Introduction <a name="intro"></a>
 ------------
