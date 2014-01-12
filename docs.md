@@ -3,6 +3,13 @@ layout: default
 title: Fez - Documentation
 ---
 
+* <a href="#intro">Introduction</a>
+* <a href="#using">Using</a>
+** <a href="understanding">Understanding rule and rule.each</a>
+
+Introduction <a name="intro"></a>
+------------
+
 Fez is an über fast build tool based on [tup][2] and engineered for Javascript. Build specs are defined as sets of transformational relationships between files. This set of rules is used to construct a build graph which is efficiently traversable, enabling Fez to do only the work which needs to be done, and to do work in parallel where appropriate.
 
 Let's look at the following ruleset:
@@ -30,7 +37,7 @@ already exist on the file system) to the sink nodes (files which have no further
 outputs). Third, it gives us an opportunity to introduce concurrency (see the
 roadmap below) and process appropriate transformations in separate processes.
 
-Using
+Using <a name="using"></a>
 -----
 
 Fez build specs are simple Javascript files, usually called `fez.js` in a
@@ -94,7 +101,7 @@ recommended) to include the line even in build specs which will be used
 primarily as child specs. Using child specs will be discussed in more detail
 below.
 
-### Understanding `rule` and `rule.each`
+### Understanding `rule` and `rule.each` <a name="understanding"></a>
 
 Rulesets  are  defined  with  a   combination  of  the  `rule`  and  `rule.each`
 functions.  They  each   have  semantic  differences  which   are  important  to
