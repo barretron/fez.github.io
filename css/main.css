@@ -72,6 +72,6 @@ p > code {
   color: #323232;
   background: #FFFFFF;
   border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 2px;
-  padding: 0 2px;
+  border-radius: 3px;
+  padding: 2px 2px;
 }
