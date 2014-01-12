@@ -1,4 +1,4 @@
-.highlight { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.15); padding: 6px 6px 6px 8px; }
+.highlight { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.15); padding: 6px 6px 6px 8px; border-radius: 3px; }
 .highlight .javascript {
   margin: 0;
 }
