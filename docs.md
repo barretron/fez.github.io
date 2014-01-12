@@ -123,7 +123,7 @@ The build graph would end up looking this like this:
 
     a.js
          ↘
-    b.js - ⇒ dist.min.js
+    b.js  ⇒ dist.min.js
          ↗
     c.js
 
