@@ -67,3 +67,10 @@ pre {
 .meta {
   float: right;
 }
+
+code {
+  color: #464646;
+  background: #EFEFEF;
+  border: 1px solid #323232;
+  border-radius: 2px;
+}
