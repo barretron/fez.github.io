@@ -5,7 +5,7 @@ title: Fez - Documentation
 
 * <a href="#intro">Introduction</a>
 * <a href="#using">Using</a>
-  * <a href="understanding">Understanding rule and rule.each</a>
+  * <a href="#understanding">Understanding rule and rule.each</a>
 
 Introduction <a name="intro"></a>
 ------------
