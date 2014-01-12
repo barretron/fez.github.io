@@ -73,4 +73,5 @@ p > code {
   background: #FFFFFF;
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 2px;
+  padding: 0 2px;
 }
