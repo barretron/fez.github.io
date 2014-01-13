@@ -86,3 +86,11 @@ p > code {
 ul ul {
   padding-left: 1.25em;
 }
+
+.operations td {
+  width: 266px;
+  height: 160px;
+}
+
+.operations td img {
+}
