@@ -59,6 +59,10 @@ h1 {
 .content p:first-child {
   margin-top: -12px;
 }
+
+.content p:last-child {
+  margin-bottom: 0px;
+}
  
 pre {
   margin: 0;
@@ -81,6 +85,10 @@ p > code {
   margin-left: 4px;
   color: #424242;
   font-size: 80%;
+}
+
+ul {
+  margin-top: 0;
 }
 
 ul ul {
