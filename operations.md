@@ -21,5 +21,6 @@ Operations
   <tr>
     <td><img width="200" src="http://i.got.nothing.to/img/jshint.png" /></td>
     <td><img width="200" src="http://karma-runner.github.io/assets/img/banner.png" /></td>
+    <td><img width="200" src="https://dl.dropboxusercontent.com/u/10832827/mocha.png" /></td>
   </tr>
 </table>
