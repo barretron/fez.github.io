@@ -35,7 +35,7 @@ h1 {
 }
 
 h2:first-child {
-  margin-top: -4px;
+  margin-top: 6px;
   margin-bottom: 1em;
 }
 
@@ -136,4 +136,16 @@ img.unimplemented {
   text-align: center;
 }
 
+.bitcoin {
+  font-family: mono;
+  color: #525252;
+  letter-spacing: 2px;
+  text-align: center;
+}
 
+.copy {
+  opacity: 0.5;
+  position: relative;
+  top: 2px;
+  left: 4px;
+}

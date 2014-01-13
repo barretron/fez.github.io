@@ -38,4 +38,15 @@ otherwise go to clients. For now, here's a bitcoin address:
 
 <!-- <script data-gittip-username="isaacbw" src="//gttp.co/v1.js"></script> -->
 
-    14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA
+<div class="bitcoin">14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA<img id="copy" class="copy" src="clipboard-1.png" /></div>
+
+<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+<script type="text/javascript">
+ ZeroClipboard.setDefaults({ moviePath: '/js/ZeroClipboard.swf' });
+ var clip = new ZeroClipboard(document.getElementById("copy"));
+ clip.on("dataRequested", function(client, args) {
+   clip.setText("14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA");
+   document.getElementById("copy").src = "clipboard-checkmark-1.png";
+ });
+</script>
+
