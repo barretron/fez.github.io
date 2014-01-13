@@ -25,7 +25,7 @@ request.
 
 The API is simple; you don't have to be a core developer to
 understand how to write operations. Take a look at some of
-the operations at<http://github.com/fez> to see how it's
+the operations at <http://github.com/fez> to see how it's
 done.
 
 Donate
