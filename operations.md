@@ -21,3 +21,10 @@ title: Fez - Operations
     <td><img width="200" src="https://dl.dropboxusercontent.com/u/10832827/mocha.png" /></td>
   </tr>
 </table>
+
+---
+
+[browserify](https://github.com/isaacbw/fez-browserify)  
+[concat](https://github.com/isaacbw/fez-concat)  
+[copy](https://github.com/isaacbw/fez-copy)  
+[uglify](https://github.com/isaacbw/fez-uglify)  
