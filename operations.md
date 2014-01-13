@@ -28,3 +28,5 @@ title: Fez - Operations
 [concat](https://github.com/isaacbw/fez-concat)  
 [copy](https://github.com/isaacbw/fez-copy)  
 [uglify](https://github.com/isaacbw/fez-uglify)  
+
+These are just some of our favorites. There are plenty more [on npm](https://npmjs.org/search?q=fez) that aren't listed here!
