@@ -20,7 +20,7 @@ body {
 }  
 
 .content {
-  background: #FEFEFE;
+  background: #FEFEFE; 
   padding: 24px;
   margin-bottom: 24px;
 }
@@ -118,7 +118,7 @@ ul ul {
 
 .operations td {
   width: 266px;
-  height: 160px;
+  padding: 0.5em 0;
   text-align: center;
 }
 
