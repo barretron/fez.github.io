@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #EFEFEF;
   font-family: 'News Cycle', sans-serif;
+  color: #424242;
 }
 
 .header {
@@ -76,6 +77,19 @@ pre {
   float: right;
 }
 
+p {
+  font-size: 24px;
+  text-align: justify;
+}
+
+p, ul {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+ul {
+  font-size: 16px;
+}
+
 p > code {
   color: #424242;
   background: #FFFFFF;
@@ -102,7 +116,12 @@ ul ul {
 .operations td {
   width: 266px;
   height: 160px;
+  text-align: center;
 }
 
 .operations td img {
+}
+
+img.unimplemented {
+  opacity: 0.25;
 }
