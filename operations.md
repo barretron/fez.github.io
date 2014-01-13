@@ -3,9 +3,6 @@ layout: default
 title: Fez - Operations
 ---
 
-Operations
-==========
-
 <table class="operations"> 
   <tr>
     <td><img width="200" src="http://lesscss.org/images/logo.png" /></td>
