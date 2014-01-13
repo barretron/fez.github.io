@@ -5,8 +5,8 @@ title: Fez - Operations
 
 <table class="operations"> 
   <tr>
-    <td><img width="200" src="http://lesscss.org/images/logo.png" /></td>
-    <td><img width="200" src="http://sweetjs.org/sweetjs.png" /></td>
+    <td><a href="https://github.com/isaacbw/fez-less"><img width="200" src="http://lesscss.org/images/logo.png" /></a></td>
+    <td><a href="https://github.com/havvy/fez-sweet.js"><img width="200" src="http://sweetjs.org/sweetjs.png" /></a></td>
     <td><img width="200" src="http://learnboost.github.io/stylus/assets/stylus.png" /></td>
   </tr>
   <tr>
