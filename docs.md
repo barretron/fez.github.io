@@ -16,7 +16,7 @@ title: Fez - Documentation
 Introduction
 ------------
 
-Fez is an über fast build tool based on [tup][2] and engineered for Javascript. Build specs are defined as sets of transformational relationships between files. This set of rules is used to construct a build graph which is efficiently traversable, enabling Fez to do only the work which needs to be done, and to do work in parallel where appropriate.
+Fez is an über fast general purpose build tool based on [tup][2] and engineered for Javascript. Build specs are defined as sets of transformational relationships between files. This set of rules is used to construct a build graph which is efficiently traversable, enabling Fez to do only the work which needs to be done, and to do work in parallel where appropriate.
 
 Let's look at the following ruleset:
 
