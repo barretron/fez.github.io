@@ -7,5 +7,5 @@ News
 ====
 
 {% for post in site.posts %}
-<a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}
+<a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date_to_string }}</span>
 {% endfor %}
