@@ -6,6 +6,11 @@ title: Fez - Documentation
 * <a href="#intro">Introduction</a>
 * <a href="#using">Using</a>
   * <a href="#understanding">Understanding rule and rule.each</a>
+* <a href="#ops">Operations</a>
+  * <a href="#op-basics">The Basics</a>
+  * <a href="#op-writing">Writing Your Own</a>
+* <a href="#utilities">Utilities</a>
+  * <a href="#mapping">Mapping Functions</a>
 
 <a name="intro"></a>
 Introduction
