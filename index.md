@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Fez - über fast
+title: Fez
 ---
 
 News
 ====
 
 {% for post in site.posts %}
-{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a>
+<a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_string }}
 {% endfor %}
