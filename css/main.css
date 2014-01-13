@@ -50,6 +50,10 @@ h1 {
   margin: 0 0 0.67em 0;
 }
 
+h2:first-child {
+  margin-top: 0;
+}
+
 .badge {
   position: absolute;
   top: 4px;
