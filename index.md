@@ -8,7 +8,8 @@ Fez is an über fast general purpose build tool based on [tup][1] and engineered
 <ul class="overview-list">
   <li>Fast</li>
   <li>Powerful</li>
-  <li>Concise</li>
+  <li>Succinct</li>
+  <li>Cool</li>
 </ul>
 
 Let's look at the following ruleset:

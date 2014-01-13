@@ -1,0 +1,32 @@
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.overview-list {
+  text-align: center;
+}
+
+.nav {
+  padding: 8px 0 12px 0;
+}
+
+.nav a {
+  display: block;
+  margin: 4px 0;
+  padding: 6px 0;
+  text-align: center;
+  background: #424242;
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+.nav a:last-child: {
+  margin-bottom: 0;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+

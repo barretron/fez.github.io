@@ -1,0 +1,26 @@
+.content {
+  width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.overview-list li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+.nav {
+  background: #424242;
+  padding: 8px 0 12px 0;
+}
+
+.nav a {
+  margin: 0 1em;
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+

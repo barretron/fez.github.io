@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   background: #EFEFEF;
@@ -12,21 +13,6 @@ body {
   padding-top: 1em;
 }
 
-.nav {
-  background: #424242;
-  padding: 8px 0 12px 0;
-}
-
-.nav a {
-  margin: 0 1em;
-  color: #EFEFEF;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
 .logo {
   display: block;
   width: 200px;
@@ -34,12 +20,9 @@ body {
 }  
 
 .content {
-  width: 800px;
-  margin: 0 auto;
   background: #FEFEFE;
   padding: 24px;
   margin-bottom: 24px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
 }
 
 .footer { 
@@ -153,7 +136,4 @@ img.unimplemented {
   text-align: center;
 }
 
-.overview-list li {
-  display: inline;
-  margin: 0 1em;
-}
+
