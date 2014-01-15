@@ -34,7 +34,7 @@ body {
 h1 {
   font-size: 13px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 24px 0;
   text-align: right;
 }
 
@@ -49,7 +49,7 @@ h2:first-child {
   left: 4px;
 }
 
-.content > p:first-child {
+.content > p:first-of-type {
   margin-top: -8px;
 }
 

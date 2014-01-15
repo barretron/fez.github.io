@@ -8,7 +8,7 @@ operations
 
 <table class="operations"> 
   <tr>
-    <td><a href="https://github.com/isaacbw/fez-less"><img width="65%" src="http://lesscss.org/images/logo.png" /></a></td>
+    <td><a href="https://github.com/isaacbw/fez-less"><img width="65%" src="http://moduscreate.com/wp-content/uploads/2012/01/less-css-logo.png" /></a></td>
     <td><a href="https://github.com/havvy/fez-sweet.js"><img width="65%" src="http://sweetjs.org/sweetjs.png" /></a></td>
     <td><a href="https://github.com/isaacbw/fez-browserify"><img width="65%" src="http://browserify.org/images/browserify.png" /></a></td>
   </tr>
@@ -32,7 +32,5 @@ operations
     <td><a href="https://github.com/isaacbw/fez-uglify">uglify</a></td>
   </tr>
 </table>
-
----
 
 These are just some of our favorites. There are plenty more [on npm](https://npmjs.org/browse/keyword/fez) that aren't listed here!
