@@ -120,6 +120,18 @@ ul ul {
   width: 266px;
   padding: 0.5em 0;
   text-align: center;
+  height: 160px;
+}
+
+.operations a {
+  text-decoration: none;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 24px;
+  color: #00A6FF;
+}
+
+.operations a:hover {
+  text-decoration: underline;
 }
 
 .operations td img {

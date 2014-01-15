@@ -17,7 +17,7 @@ Using
 
 Fez build specs are simple Javascript files, usually called `fez.js` in a
 project's root directory. There is no command line Fez tool; instead, Fez build
-specs are self-executable.  The basic outline of a `fez.js` file usually
+specs are self-executable.  The basic outline of a `fez.js` file is usually
 something like this:
 
 {% highlight javascript %}

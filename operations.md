@@ -22,13 +22,14 @@ title: Fez - Operations
   </tr>
   <tr>
     <td><img class="unimplemented" width="65%" src="http://learnboost.github.io/stylus/assets/stylus.png" /></td>
+    <td><a href="https://github.com/isaacbw/fez-concat">concat</a></td>
+    <td><a href="https://github.com/isaacbw/fez-copy">copy</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/isaacbw/fez-uglify">uglify</a></td>
   </tr>
 </table>
 
 ---
 
-[concat](https://github.com/isaacbw/fez-concat)  
-[copy](https://github.com/isaacbw/fez-copy)  
-[uglify](https://github.com/isaacbw/fez-uglify)  
-
-These are just some of our favorites. There are plenty more [on npm](https://npmjs.org/search?q=fez) that aren't listed here!
+These are just some of our favorites. There are plenty more [on npm](https://npmjs.org/browse/keyword/fez) that aren't listed here!
