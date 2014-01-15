@@ -3,6 +3,9 @@ layout: default
 title: Fez - Contribute
 ---
 
+contribute
+===
+
 Fix bugs
 --------
 

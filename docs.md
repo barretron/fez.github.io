@@ -3,6 +3,9 @@ layout: default
 title: Fez - Documentation
 ---
 
+documentation
+===
+
 * <a href="#using">Using</a>
   * <a href="#understanding">Understanding rule and rule.each</a>
 * <a href="#ops">Operations</a>
@@ -148,5 +151,23 @@ that seems like a pretty uncommon use case.  If you do need to define a
 relationship like that, it would be great for you to submit your use case in a
 bug report!.
 
+<a name="ops"></a>
+Operations
+----------
+
+<a name="op-basics"></a>
+### The Basics
+
+<a name="op-writing"></a>
+### Writing Your Own
+
+<a name="utilities"></a>
+Utilities
+---------
+
+<a href="mapping"></a>
+### Mapping Functions
+
 [1]: https://www.gnu.org/software/make/
 [2]: http://gittup.org/tup/
+
