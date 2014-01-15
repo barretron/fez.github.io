@@ -155,19 +155,91 @@ bug report!.
 Operations
 ----------
 
+Operations represent actions to be done with data. At their simplest, they are
+transformations from one file to another. There are also output-less operations
+called tasks. The build graph is composed of file nodes and operation nodes.
+Operations can have many inputs and many outputs. 
+
 <a name="op-basics"></a>
 ### The Basics
 
+Most operations on npm are actually function generators, for example:
+
+    rule("*.js", "out/dist.min.js", concat(), uglify());
+
+Notice how the operations are actually being called. This is so that they can 
+accept an optional configuration object, for example:
+
+    rule("*.js", "out/dist.min.js", concat({ separator: "\n" }), uglify({ compress: true }));
+
+The functions `concat` and `uglify` return the actual operation functions. See 
+below for the form the returned functions take.
+
+In our examples above, we also demonstrated what is called operation chaining.
+When multiple operations are listed in a single rule, data is first loaded
+from the input(s), then passed to the first operation. The results of the first
+operation are passed to the second, and so on until there are no more operations, 
+and the data is written to the output file. This is often more useful than 
+chains of temporary files and is analogous to piped (`|`) commands in a Makefile.
+
 <a name="op-writing"></a>
 ### Writing Your Own
+
+The function passed as the third argument to `rule` and `rule.each` should 
+take the form:
+
+    function(inputs, output) {
+      ...
+    }
+
+Right now, output is either a string or an array of strings, depending on what was
+passed to `rule`. It will always be a string when `rule.each` is used. This function
+should return either a:
+
+* Buffer
+* String
+* Stream
+* or a Promise to a
+  * Buffer
+  * or String
+
+You can use any A+ compliant promise library you wish. Fez uses [bluebird][3] 
+internally, as do the core (e.g copy, concat, move) operations.
+
+The inputs array contains special `Input` objects. They have the following functions:
+
+    Input#asBuffer()
+
+returns a promise to a Buffer with the file's contents.
+
+    Input#asStream()
+
+returns a readable stream which will be fed with the file's contents.
+
+    Input#getFilename()
+
+returns the original filename of the input. This is useful in operations which may
+not care about the actual contents, for example an operation which makes a system
+call using the filename instead of working on it directly.
 
 <a name="utilities"></a>
 Utilities
 ---------
 
+Fez comes prepackaged with a handlful of useful utility functions. They are all 
+accessible directly via the `fez` object.
+
 <a href="mapping"></a>
 ### Mapping Functions
 
+    fez.mapFile(pattern)
+
+Returns a function which takes an input filename and returns a new string based on the
+pattern passed to `mapFile`. The pattern can contain directives which extract strings
+from the input. Available directives are:
+
+* `%f` is replaced with the filename minus its extension
+
 [1]: https://www.gnu.org/software/make/
 [2]: http://gittup.org/tup/
-
+[3]: https://npmjs.org/package/bluebird
