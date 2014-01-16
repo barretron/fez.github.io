@@ -6,6 +6,7 @@ title: Fez - Documentation
 documentation
 ===
 
+* <a href="#installing">Installing</a>
 * <a href="#using">Using</a>
   * <a href="#understanding">Understanding rule and rule.each</a>
 * <a href="#ops">Operations</a>
@@ -13,6 +14,24 @@ documentation
   * <a href="#op-writing">Writing Your Own</a>
 * <a href="#utilities">Utilities</a>
   * <a href="#mapping">Mapping Functions</a>
+
+<a name="installing"></a>
+Installing
+-----
+
+Fez is not officially release yet. You can, however, download and use it directly
+from GitHub. Just run the following command in your project directory:
+
+    npm install --save-dev fez/fez
+
+or add the following to your package.json, then run `npm install`:
+
+    "devDependencies": {
+      "fez": "git://github.com/fez/fez",
+      ...
+    }
+
+And you're all set to start using Fez!
 
 <a name="using"></a>
 Using
