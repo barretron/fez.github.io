@@ -49,7 +49,7 @@ h2:first-child {
   left: 4px;
 }
 
-.content > p:first-of-type {
+.content > p:nth-child(0n + 2) {
   margin-top: -8px;
 }
 
