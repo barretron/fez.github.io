@@ -74,7 +74,7 @@ function takes a module (almost always the current module) as an argument. If
 that module is the *main* module (i.e the file which was run with `node
 fez.js`), Fez will parse command line options and run the builds generated from
 the rulesets in the module. This line should be in every build spec unless you
-are sure you will never want to run the build spec on its own. It i→s safe (and
+are sure you will never want to run the build spec on its own. It it's safe (and
 recommended) to include the line even in build specs which will be used
 primarily as child specs. Using child specs will be discussed in more detail
 below.
