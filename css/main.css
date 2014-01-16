@@ -70,7 +70,7 @@ p {
   text-align: justify;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, ul {
   font-family: 'Istok Web', sans-serif;
 }
 
