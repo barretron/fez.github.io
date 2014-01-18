@@ -19,7 +19,7 @@ documentation
 Installing
 -----
 
-Fez is not officially release yet. You can, however, download and use it directly
+Fez is not officially released yet. You can, however, download and use it directly
 from GitHub. Just run the following command in your project directory:
 
     npm install --save-dev fez/fez
