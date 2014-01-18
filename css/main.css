@@ -166,3 +166,7 @@ img.unimplemented {
   top: 2px;
   left: 4px;
 }
+
+p.center {
+  text-align: center;
+}

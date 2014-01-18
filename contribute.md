@@ -39,9 +39,9 @@ towards commissioning resources like artwork, and enabling
 core developers to dedicate time to Fez which would
 otherwise go to clients. For now, here's a bitcoin address:
 
-<!-- <script data-gittip-username="isaacbw" src="//gttp.co/v1.js"></script> -->
-
-<div class="bitcoin">14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA<img id="copy" class="copy" src="clipboard-1.png" /></div>
+<div class="bitcoin">14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA<img id="copy" class="copy" src="clipboard-1.png" />
+  <p class="center"><img src="https://blockchain.info/qr?data=14LaXZaTHwGz6dy56qQoSnqTYBuS6BEgqA&size=200" /></p>
+</div>
 
 <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
 <script type="text/javascript">
