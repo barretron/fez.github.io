@@ -9,6 +9,8 @@ documentation
 * <a href="#installing">Installing</a>
 * <a href="#using">Using</a>
   * <a href="#understanding">Understanding rule and rule.each</a>
+  * <a href="#stages">Stages</a>
+  * <a href="#imperative">Imperative Mode</a>
 * <a href="#ops">Operations</a>
   * <a href="#op-basics">The Basics</a>
   * <a href="#op-writing">Writing Your Own</a>
@@ -169,6 +171,51 @@ The only thing missing is one to many and many to many relationships. For now,
 that seems like a pretty uncommon use case.  If you do need to define a
 relationship like that, it would be great for you to submit your use case in a
 bug report!.
+
+<a name="stages"></a>
+### Stages
+
+We have already seen stages. A stage is defined simply by a function with the 
+signature:
+
+    function(rule) { ... }
+
+Think of a stage as a self-contained set of rules. Only one stage can execute
+at a time. Once a stage is completely finished, the next stage is evaluated, its 
+build graph created, and files transformed. We can chain stages with `rule.use`.
+
+<a name="imperative"></a>
+### Imperative Mode
+
+    This section describes how imperative mode will behave. It isn't implemented yet.
+
+Fez is opinionated about how build specs should be defined. You need to know
+or be able to derive with the help of the `rule` functions your entire dependency
+tree at the beginning of the build. Dynamic outputs, i.e from tools which output
+different files based on the source, or randomly, are a no-no. Usually the 
+preferable option is to only offer a subset of these tools which do have predictable
+outputs. However, in some cases this isn't possible or acceptable, and in these
+cases *imperative mode* comes in handy.
+
+Think of imperative mode as a way to step away from Fez's core philosophy for
+a moment, take care of messy business, then step back into the world of static
+dependency graphs. Imperative mode is stage-wide, meaning that a given stage is either
+imperative or not, and cannot be both. To engage imperative mode, use the `rule.imp`
+function (which will probably be renamed). For example:
+
+    function(rule) {
+      var done = rule.imp();
+      
+      //do work
+
+      done();
+    }
+
+The return value of `rule.imp` is a function which is called to let Fez know that
+the stage is finished. This function can be ignored, and a promise can be returned
+from the stage function instead. Note that rule.imp() will fail if any other `rule`
+functions have already been called, and no `rule` functions can be called after `rule.imp`.
+Imperative mode is mutually exclusive within a stage with build graph mode.
 
 <a name="ops"></a>
 Operations
