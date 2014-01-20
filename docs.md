@@ -215,7 +215,7 @@ The return value of `rule.imp` is a function which is called to let Fez know tha
 the stage is finished. This function can be ignored, and a promise can be returned
 from the stage function instead. Note that rule.imp() will fail if any other `rule`
 functions have already been called, and no `rule` functions can be called after `rule.imp`.
-Imperative mode is mutually exclusive within a stage with build graph mode.
+Imperative mode is mutually exclusive with build graph mode within a stage.
 
 <a name="ops"></a>
 Operations
@@ -254,9 +254,11 @@ chains of temporary files and is analogous to piped (`|`) commands in a Makefile
 The function passed as the third argument to `rule` and `rule.each` should 
 take the form:
 
-    function(inputs, output) {
-      ...
-    }
+{% highlight javascript %}
+function(inputs, output) {
+  ...
+}
+{% endhighlight %}
 
 Right now, output is either a string or an array of strings, depending on what was
 passed to `rule`. It will always be a string when `rule.each` is used. This function
