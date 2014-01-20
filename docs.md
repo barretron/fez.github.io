@@ -201,13 +201,15 @@ dependency graphs. Imperative mode is stage-wide, meaning that a given stage is 
 imperative or not, and cannot be both. To engage imperative mode, use the `rule.imp`
 function (which will probably be renamed). For example:
 
-    function(rule) {
-      var done = rule.imp();
-      
-      //do work
+{% highlight javascript %}
+function(rule) {
+  var done = rule.imp();
+  
+  //do work
 
-      done();
-    }
+  done();
+}
+{% endhighlight %}
 
 The return value of `rule.imp` is a function which is called to let Fez know that
 the stage is finished. This function can be ignored, and a promise can be returned
