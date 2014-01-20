@@ -187,8 +187,6 @@ build graph created, and files transformed. We can chain stages with `rule.use`.
 <a name="imperative"></a>
 ### Imperative Mode
 
-    This section describes how imperative mode will behave. It isn't implemented yet.
-
 Fez is opinionated about how build specs should be defined. You need to know
 or be able to derive with the help of the `rule` functions your entire dependency
 tree at the beginning of the build. Dynamic outputs, i.e from tools which output
